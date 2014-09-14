@@ -43,7 +43,7 @@
             this.txtsplyname = new DevExpress.XtraEditors.TextEdit();
             ((System.ComponentModel.ISupportInitialize)(this.searchgroup)).BeginInit();
             this.searchgroup.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ribboncontrol)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gcsupplier)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gvsupplier)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtsplyno.Properties)).BeginInit();
@@ -63,15 +63,15 @@
             // 
             // ribbonControl1
             // 
-            this.ribbonControl1.ExpandCollapseItem.Id = 0;
-            this.ribbonControl1.Toolbar.ShowCustomizeItem = false;
+            this.ribboncontrol.ExpandCollapseItem.Id = 0;
+            this.ribboncontrol.Toolbar.ShowCustomizeItem = false;
             // 
             // gcsupplier
             // 
             this.gcsupplier.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gcsupplier.Location = new System.Drawing.Point(0, 198);
             this.gcsupplier.MainView = this.gvsupplier;
-            this.gcsupplier.MenuManager = this.ribbonControl1;
+            this.gcsupplier.MenuManager = this.ribboncontrol;
             this.gcsupplier.Name = "gcsupplier";
             this.gcsupplier.Size = new System.Drawing.Size(717, 193);
             this.gcsupplier.TabIndex = 3;
@@ -169,7 +169,7 @@
             // txtsplyno
             // 
             this.txtsplyno.Location = new System.Drawing.Point(170, 26);
-            this.txtsplyno.MenuManager = this.ribbonControl1;
+            this.txtsplyno.MenuManager = this.ribboncontrol;
             this.txtsplyno.Name = "txtsplyno";
             this.txtsplyno.Size = new System.Drawing.Size(186, 20);
             this.txtsplyno.TabIndex = 3;
@@ -177,7 +177,7 @@
             // txtsplyname
             // 
             this.txtsplyname.Location = new System.Drawing.Point(170, 63);
-            this.txtsplyname.MenuManager = this.ribbonControl1;
+            this.txtsplyname.MenuManager = this.ribboncontrol;
             this.txtsplyname.Name = "txtsplyname";
             this.txtsplyname.Size = new System.Drawing.Size(186, 20);
             this.txtsplyname.TabIndex = 4;
@@ -189,13 +189,13 @@
             this.Controls.Add(this.gcsupplier);
             this.Name = "SupplierListForm";
             this.Text = "供应商信息";
-            this.Controls.SetChildIndex(this.ribbonControl1, 0);
+            this.Controls.SetChildIndex(this.ribboncontrol, 0);
             this.Controls.SetChildIndex(this.searchgroup, 0);
             this.Controls.SetChildIndex(this.gcsupplier, 0);
             ((System.ComponentModel.ISupportInitialize)(this.searchgroup)).EndInit();
             this.searchgroup.ResumeLayout(false);
             this.searchgroup.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ribboncontrol)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gcsupplier)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gvsupplier)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtsplyno.Properties)).EndInit();

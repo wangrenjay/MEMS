@@ -57,6 +57,22 @@ namespace MEMS.Client.Main
         private void BtnProduct_ItemClick(object sender, ItemClickEventArgs e)
         {
             FormFactory.LoadForm(this, typeof(ProductListForm));
+            //this.ActivateMdiChild(new ProductListForm());
+        }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+            selectPageCategory.Visible = false;
+        }
+
+        private void MainForm_MdiChildActivate(object sender, EventArgs e)
+        {
+            Console.WriteLine(this.ActiveMdiChild.Name);
+            var ribbonfrm = ActiveMdiChild as BaseListForm;
+            //this.ribbonControl.MergeRibbon(ribbonfrm.ribbonmenu);
+            ribbonControl.MergedPages.Add(ribbonfrm.ribbonMenu);
+            //ribbonControl.MergedPages.
+            Console.WriteLine(ribbonControl.MergedPages.Count);
         }
     }
 }

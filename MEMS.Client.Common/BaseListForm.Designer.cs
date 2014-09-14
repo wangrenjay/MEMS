@@ -28,47 +28,49 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BaseListForm));
-            this.ribbonControl1 = new DevExpress.XtraBars.Ribbon.RibbonControl();
+            this.ribboncontrol = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.barAdd = new DevExpress.XtraBars.BarButtonItem();
             this.barEdit = new DevExpress.XtraBars.BarButtonItem();
             this.barDelete = new DevExpress.XtraBars.BarButtonItem();
             this.barClose = new DevExpress.XtraBars.BarButtonItem();
             this.barsearchCheck = new DevExpress.XtraBars.BarCheckItem();
-            this.ribbonImageCollectionLarge = new DevExpress.Utils.ImageCollection();
-            this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.ribbonImageCollectionLarge = new DevExpress.Utils.ImageCollection(this.components);
+            this.ribbonMenu = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.searchgroup = new DevExpress.XtraEditors.GroupControl();
             this.searchButton = new DevExpress.XtraEditors.SimpleButton();
-            ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ribboncontrol)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonImageCollectionLarge)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.searchgroup)).BeginInit();
             this.searchgroup.SuspendLayout();
             this.SuspendLayout();
             // 
-            // ribbonControl1
+            // ribboncontrol
             // 
-            this.ribbonControl1.ExpandCollapseItem.Id = 0;
-            this.ribbonControl1.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
-            this.ribbonControl1.ExpandCollapseItem,
+            this.ribboncontrol.ExpandCollapseItem.Id = 0;
+            this.ribboncontrol.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
+            this.ribboncontrol.ExpandCollapseItem,
             this.barAdd,
             this.barEdit,
             this.barDelete,
             this.barClose,
             this.barsearchCheck});
-            this.ribbonControl1.LargeImages = this.ribbonImageCollectionLarge;
-            this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl1.MaxItemId = 7;
-            this.ribbonControl1.Name = "ribbonControl1";
-            this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
-            this.ribbonPage1});
-            this.ribbonControl1.ShowApplicationButton = DevExpress.Utils.DefaultBoolean.False;
-            this.ribbonControl1.ShowPageHeadersMode = DevExpress.XtraBars.Ribbon.ShowPageHeadersMode.Hide;
-            this.ribbonControl1.ShowToolbarCustomizeItem = false;
-            this.ribbonControl1.Size = new System.Drawing.Size(717, 98);
-            this.ribbonControl1.Toolbar.ShowCustomizeItem = false;
-            this.ribbonControl1.ToolbarLocation = DevExpress.XtraBars.Ribbon.RibbonQuickAccessToolbarLocation.Hidden;
+            this.ribboncontrol.LargeImages = this.ribbonImageCollectionLarge;
+            this.ribboncontrol.Location = new System.Drawing.Point(0, 0);
+            this.ribboncontrol.MaxItemId = 7;
+            this.ribboncontrol.MdiMergeStyle = DevExpress.XtraBars.Ribbon.RibbonMdiMergeStyle.Always;
+            this.ribboncontrol.Name = "ribboncontrol";
+            this.ribboncontrol.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
+            this.ribbonMenu});
+            this.ribboncontrol.ShowApplicationButton = DevExpress.Utils.DefaultBoolean.False;
+            this.ribboncontrol.ShowPageHeadersMode = DevExpress.XtraBars.Ribbon.ShowPageHeadersMode.Hide;
+            this.ribboncontrol.ShowToolbarCustomizeItem = false;
+            this.ribboncontrol.Size = new System.Drawing.Size(717, 98);
+            this.ribboncontrol.Toolbar.ShowCustomizeItem = false;
+            this.ribboncontrol.ToolbarLocation = DevExpress.XtraBars.Ribbon.RibbonQuickAccessToolbarLocation.Hidden;
             // 
             // barAdd
             // 
@@ -132,13 +134,13 @@
             this.ribbonImageCollectionLarge.Images.SetKeyName(15, "Action_LinkUnlink_Link_32x32.png");
             this.ribbonImageCollectionLarge.Images.SetKeyName(16, "Action_LinkUnlink_Unlink_32x32.png");
             // 
-            // ribbonPage1
+            // ribbonMenu
             // 
-            this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.ribbonMenu.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.ribbonPageGroup1,
             this.ribbonPageGroup2});
-            this.ribbonPage1.Name = "ribbonPage1";
-            this.ribbonPage1.Text = "ribbonPage1";
+            this.ribbonMenu.Name = "ribbonMenu";
+            this.ribbonMenu.Text = "ribbonPage1";
             // 
             // ribbonPageGroup1
             // 
@@ -185,11 +187,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(717, 391);
             this.Controls.Add(this.searchgroup);
-            this.Controls.Add(this.ribbonControl1);
+            this.Controls.Add(this.ribboncontrol);
             this.Name = "BaseListForm";
             this.Text = "BaseListForm";
             this.Load += new System.EventHandler(this.BaseListForm_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ribboncontrol)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonImageCollectionLarge)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.searchgroup)).EndInit();
             this.searchgroup.ResumeLayout(false);
@@ -199,7 +201,6 @@
 
         #endregion
 
-        private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage1;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup1;
         private DevExpress.XtraBars.BarButtonItem barAdd;
         private DevExpress.XtraBars.BarButtonItem barEdit;
@@ -210,6 +211,7 @@
         private DevExpress.XtraEditors.SimpleButton searchButton;
         protected DevExpress.XtraEditors.GroupControl searchgroup;
         private DevExpress.XtraBars.BarCheckItem barsearchCheck;
-        protected DevExpress.XtraBars.Ribbon.RibbonControl ribbonControl1;
+        public DevExpress.XtraBars.Ribbon.RibbonControl ribboncontrol;
+        public DevExpress.XtraBars.Ribbon.RibbonPage ribbonMenu;
     }
 }

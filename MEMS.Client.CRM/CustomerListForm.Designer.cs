@@ -45,7 +45,7 @@
             this.gridColumn7 = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.searchgroup)).BeginInit();
             this.searchgroup.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ribboncontrol)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gccustomer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gvcustomer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_customerno.Properties)).BeginInit();
@@ -70,15 +70,15 @@
             // 
             // ribbonControl1
             // 
-            this.ribbonControl1.ExpandCollapseItem.Id = 0;
-            this.ribbonControl1.Toolbar.ShowCustomizeItem = false;
+            this.ribboncontrol.ExpandCollapseItem.Id = 0;
+            this.ribboncontrol.Toolbar.ShowCustomizeItem = false;
             // 
             // gccustomer
             // 
             this.gccustomer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gccustomer.Location = new System.Drawing.Point(0, 198);
             this.gccustomer.MainView = this.gvcustomer;
-            this.gccustomer.MenuManager = this.ribbonControl1;
+            this.gccustomer.MenuManager = this.ribboncontrol;
             this.gccustomer.Name = "gccustomer";
             this.gccustomer.Size = new System.Drawing.Size(717, 193);
             this.gccustomer.TabIndex = 3;
@@ -144,7 +144,7 @@
             // txt_customerno
             // 
             this.txt_customerno.Location = new System.Drawing.Point(163, 26);
-            this.txt_customerno.MenuManager = this.ribbonControl1;
+            this.txt_customerno.MenuManager = this.ribboncontrol;
             this.txt_customerno.Name = "txt_customerno";
             this.txt_customerno.Size = new System.Drawing.Size(138, 20);
             this.txt_customerno.TabIndex = 2;
@@ -160,7 +160,7 @@
             // txt_customername
             // 
             this.txt_customername.Location = new System.Drawing.Point(410, 26);
-            this.txt_customername.MenuManager = this.ribbonControl1;
+            this.txt_customername.MenuManager = this.ribboncontrol;
             this.txt_customername.Name = "txt_customername";
             this.txt_customername.Size = new System.Drawing.Size(138, 20);
             this.txt_customername.TabIndex = 4;
@@ -176,7 +176,7 @@
             // txt_sname
             // 
             this.txt_sname.Location = new System.Drawing.Point(163, 62);
-            this.txt_sname.MenuManager = this.ribbonControl1;
+            this.txt_sname.MenuManager = this.ribboncontrol;
             this.txt_sname.Name = "txt_sname";
             this.txt_sname.Size = new System.Drawing.Size(138, 20);
             this.txt_sname.TabIndex = 6;
@@ -212,13 +212,13 @@
             this.Controls.Add(this.gccustomer);
             this.Name = "CustomerListForm";
             this.Text = "客户信息管理";
-            this.Controls.SetChildIndex(this.ribbonControl1, 0);
+            this.Controls.SetChildIndex(this.ribboncontrol, 0);
             this.Controls.SetChildIndex(this.searchgroup, 0);
             this.Controls.SetChildIndex(this.gccustomer, 0);
             ((System.ComponentModel.ISupportInitialize)(this.searchgroup)).EndInit();
             this.searchgroup.ResumeLayout(false);
             this.searchgroup.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ribboncontrol)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gccustomer)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gvcustomer)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_customerno.Properties)).EndInit();

@@ -46,7 +46,7 @@
             this.cmbcustomerlst = new DevExpress.XtraEditors.CheckedComboBoxEdit();
             ((System.ComponentModel.ISupportInitialize)(this.searchgroup)).BeginInit();
             this.searchgroup.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ribboncontrol)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gcproduct)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gvproduct)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtprocode.Properties)).BeginInit();
@@ -76,15 +76,15 @@
             // 
             // ribbonControl1
             // 
-            this.ribbonControl1.ExpandCollapseItem.Id = 0;
-            this.ribbonControl1.Toolbar.ShowCustomizeItem = false;
+            this.ribboncontrol.ExpandCollapseItem.Id = 0;
+            this.ribboncontrol.Toolbar.ShowCustomizeItem = false;
             // 
             // gcproduct
             // 
             this.gcproduct.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gcproduct.Location = new System.Drawing.Point(0, 198);
             this.gcproduct.MainView = this.gvproduct;
-            this.gcproduct.MenuManager = this.ribbonControl1;
+            this.gcproduct.MenuManager = this.ribboncontrol;
             this.gcproduct.Name = "gcproduct";
             this.gcproduct.Size = new System.Drawing.Size(717, 193);
             this.gcproduct.TabIndex = 3;
@@ -162,7 +162,7 @@
             // txtprocode
             // 
             this.txtprocode.Location = new System.Drawing.Point(145, 29);
-            this.txtprocode.MenuManager = this.ribbonControl1;
+            this.txtprocode.MenuManager = this.ribboncontrol;
             this.txtprocode.Name = "txtprocode";
             this.txtprocode.Size = new System.Drawing.Size(200, 20);
             this.txtprocode.TabIndex = 2;
@@ -178,7 +178,7 @@
             // txtproname
             // 
             this.txtproname.Location = new System.Drawing.Point(145, 62);
-            this.txtproname.MenuManager = this.ribbonControl1;
+            this.txtproname.MenuManager = this.ribboncontrol;
             this.txtproname.Name = "txtproname";
             this.txtproname.Size = new System.Drawing.Size(200, 20);
             this.txtproname.TabIndex = 4;
@@ -202,7 +202,7 @@
             // txtdrawingno
             // 
             this.txtdrawingno.Location = new System.Drawing.Point(438, 62);
-            this.txtdrawingno.MenuManager = this.ribbonControl1;
+            this.txtdrawingno.MenuManager = this.ribboncontrol;
             this.txtdrawingno.Name = "txtdrawingno";
             this.txtdrawingno.Size = new System.Drawing.Size(200, 20);
             this.txtdrawingno.TabIndex = 8;
@@ -210,7 +210,7 @@
             // cmbcustomerlst
             // 
             this.cmbcustomerlst.Location = new System.Drawing.Point(438, 29);
-            this.cmbcustomerlst.MenuManager = this.ribbonControl1;
+            this.cmbcustomerlst.MenuManager = this.ribboncontrol;
             this.cmbcustomerlst.Name = "cmbcustomerlst";
             this.cmbcustomerlst.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -225,13 +225,13 @@
             this.Controls.Add(this.gcproduct);
             this.Name = "ProductListForm";
             this.Text = "产品信息";
-            this.Controls.SetChildIndex(this.ribbonControl1, 0);
+            this.Controls.SetChildIndex(this.ribboncontrol, 0);
             this.Controls.SetChildIndex(this.searchgroup, 0);
             this.Controls.SetChildIndex(this.gcproduct, 0);
             ((System.ComponentModel.ISupportInitialize)(this.searchgroup)).EndInit();
             this.searchgroup.ResumeLayout(false);
             this.searchgroup.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ribboncontrol)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gcproduct)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gvproduct)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtprocode.Properties)).EndInit();
