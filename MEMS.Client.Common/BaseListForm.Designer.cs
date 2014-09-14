@@ -42,10 +42,13 @@
             this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.searchgroup = new DevExpress.XtraEditors.GroupControl();
             this.searchButton = new DevExpress.XtraEditors.SimpleButton();
+            this.imageCollection1 = new DevExpress.Utils.ImageCollection(this.components);
+            this.barSearch = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribboncontrol)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonImageCollectionLarge)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.searchgroup)).BeginInit();
             this.searchgroup.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.imageCollection1)).BeginInit();
             this.SuspendLayout();
             // 
             // ribboncontrol
@@ -57,10 +60,11 @@
             this.barEdit,
             this.barDelete,
             this.barClose,
-            this.barsearchCheck});
+            this.barsearchCheck,
+            this.barSearch});
             this.ribboncontrol.LargeImages = this.ribbonImageCollectionLarge;
             this.ribboncontrol.Location = new System.Drawing.Point(0, 0);
-            this.ribboncontrol.MaxItemId = 7;
+            this.ribboncontrol.MaxItemId = 8;
             this.ribboncontrol.MdiMergeStyle = DevExpress.XtraBars.Ribbon.RibbonMdiMergeStyle.Always;
             this.ribboncontrol.Name = "ribboncontrol";
             this.ribboncontrol.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
@@ -106,7 +110,7 @@
             // 
             // barsearchCheck
             // 
-            this.barsearchCheck.Caption = "查询";
+            this.barsearchCheck.Caption = "检索";
             this.barsearchCheck.Id = 6;
             this.barsearchCheck.LargeImageIndex = 3;
             this.barsearchCheck.Name = "barsearchCheck";
@@ -148,6 +152,7 @@
             this.ribbonPageGroup1.ItemLinks.Add(this.barEdit);
             this.ribbonPageGroup1.ItemLinks.Add(this.barDelete);
             this.ribbonPageGroup1.ItemLinks.Add(this.barsearchCheck);
+            this.ribbonPageGroup1.ItemLinks.Add(this.barSearch);
             this.ribbonPageGroup1.Name = "ribbonPageGroup1";
             this.ribbonPageGroup1.ShowCaptionButton = false;
             this.ribbonPageGroup1.Text = "基本操作";
@@ -181,6 +186,36 @@
             this.searchButton.Text = "检索";
             this.searchButton.Click += new System.EventHandler(this.searchButton_Click);
             // 
+            // imageCollection1
+            // 
+            this.imageCollection1.ImageSize = new System.Drawing.Size(32, 32);
+            this.imageCollection1.ImageStream = ((DevExpress.Utils.ImageCollectionStreamer)(resources.GetObject("imageCollection1.ImageStream")));
+            this.imageCollection1.Images.SetKeyName(0, "Ribbon_New_32x32.png");
+            this.imageCollection1.Images.SetKeyName(1, "Ribbon_Open_32x32.png");
+            this.imageCollection1.Images.SetKeyName(2, "Ribbon_Close_32x32.png");
+            this.imageCollection1.Images.SetKeyName(3, "Ribbon_Find_32x32.png");
+            this.imageCollection1.Images.SetKeyName(4, "Ribbon_Save_32x32.png");
+            this.imageCollection1.Images.SetKeyName(5, "Ribbon_SaveAs_32x32.png");
+            this.imageCollection1.Images.SetKeyName(6, "Ribbon_Exit_32x32.png");
+            this.imageCollection1.Images.SetKeyName(7, "Ribbon_Content_32x32.png");
+            this.imageCollection1.Images.SetKeyName(8, "Ribbon_Info_32x32.png");
+            this.imageCollection1.Images.SetKeyName(9, "BO_MyDetails_32x32.png");
+            this.imageCollection1.Images.SetKeyName(10, "Action_Security_ChangePassword_32x32.png");
+            this.imageCollection1.Images.SetKeyName(11, "BO_Employee_32x32.png");
+            this.imageCollection1.Images.SetKeyName(12, "Action_Delete_32x32.png");
+            this.imageCollection1.Images.SetKeyName(13, "Action_Edit_32x32.png");
+            this.imageCollection1.Images.SetKeyName(14, "Action_New_32x32.png");
+            this.imageCollection1.Images.SetKeyName(15, "Action_LinkUnlink_Link_32x32.png");
+            this.imageCollection1.Images.SetKeyName(16, "Action_LinkUnlink_Unlink_32x32.png");
+            // 
+            // barSearch
+            // 
+            this.barSearch.Caption = "查询";
+            this.barSearch.Id = 7;
+            this.barSearch.LargeImageIndex = 3;
+            this.barSearch.Name = "barSearch";
+            this.barSearch.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barSearch_ItemClick);
+            // 
             // BaseListForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
@@ -195,6 +230,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.ribbonImageCollectionLarge)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.searchgroup)).EndInit();
             this.searchgroup.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.imageCollection1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -213,5 +249,7 @@
         private DevExpress.XtraBars.BarCheckItem barsearchCheck;
         public DevExpress.XtraBars.Ribbon.RibbonControl ribboncontrol;
         public DevExpress.XtraBars.Ribbon.RibbonPage ribbonMenu;
+        internal DevExpress.Utils.ImageCollection imageCollection1;
+        private DevExpress.XtraBars.BarButtonItem barSearch;
     }
 }

@@ -67,12 +67,32 @@ namespace MEMS.Client.Main
 
         private void MainForm_MdiChildActivate(object sender, EventArgs e)
         {
-            Console.WriteLine(this.ActiveMdiChild.Name);
-            var ribbonfrm = ActiveMdiChild as BaseListForm;
-            //this.ribbonControl.MergeRibbon(ribbonfrm.ribbonmenu);
-            ribbonControl.MergedPages.Add(ribbonfrm.ribbonMenu);
-            //ribbonControl.MergedPages.
-            Console.WriteLine(ribbonControl.MergedPages.Count);
+            try
+            {
+                if (this.ActiveMdiChild != null)
+                {
+                    if (ActiveMdiChild is BaseListForm)
+                    {
+                        //Console.WriteLine(this.ActiveMdiChild.Name);
+                        selectPageCategory.MergedPages.Clear();
+                        var ribbonfrm = ActiveMdiChild as BaseListForm;
+                        ribbonfrm.ribbonMenu.Text = ribbonfrm.Text;
+                        this.selectPageCategory.MergedPages.Add(ribbonfrm.ribbonMenu);
+                        this.selectPageCategory.Visible = true;
+                        //this.selectPageCategory.Expanded = true;
+                        ribbonControl.SelectedPage = ribbonfrm.ribbonMenu;
+                    }
+                }
+                else
+                {
+                    selectPageCategory.MergedPages.Clear();
+                }
+                Console.WriteLine(ribbonControl.MergedPages.Count);
+            }
+            catch (Exception ex)
+            {
+                XtraMessageBox.Show(ex.Message);
+            }
         }
     }
 }

@@ -126,5 +126,17 @@ namespace MEMS.Client.Common
         {
             
         }
+
+        private void barSearch_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            try
+            {
+                SearchObject();
+            }
+            catch (Exception ex)
+            {
+                XtraMessageBox.Show(ex.Message);
+            }
+        }
     }
 }
