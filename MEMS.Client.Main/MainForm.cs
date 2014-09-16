@@ -73,7 +73,6 @@ namespace MEMS.Client.Main
                 {
                     if (ActiveMdiChild is BaseListForm)
                     {
-                        //Console.WriteLine(this.ActiveMdiChild.Name);
                         selectPageCategory.MergedPages.Clear();
                         var ribbonfrm = ActiveMdiChild as BaseListForm;
                         ribbonfrm.ribbonMenu.Text = ribbonfrm.Text;
