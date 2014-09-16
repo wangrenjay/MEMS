@@ -78,7 +78,6 @@ namespace MEMS.Client.Main
                         ribbonfrm.ribbonMenu.Text = ribbonfrm.Text;
                         this.selectPageCategory.MergedPages.Add(ribbonfrm.ribbonMenu);
                         this.selectPageCategory.Visible = true;
-                        //this.selectPageCategory.Expanded = true;
                         ribbonControl.SelectedPage = ribbonfrm.ribbonMenu;
                     }
                 }
