@@ -20,6 +20,7 @@ namespace MEMS.Client.Main
 {
     public partial class MainForm : RibbonForm
     {
+        private bool islogcancel = false;
         public MainForm()
         {
             InitializeComponent();
@@ -38,9 +39,12 @@ namespace MEMS.Client.Main
 
         private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (XtraMessageBox.Show("是否退出系统","提示",MessageBoxButtons.OKCancel) != DialogResult.OK)
+            if (!islogcancel)
             {
-                e.Cancel = true;
+                if (XtraMessageBox.Show("是否退出系统", "提示", MessageBoxButtons.OKCancel) != DialogResult.OK)
+                {
+                    e.Cancel = true;
+                }
             }
         }
 
@@ -62,7 +66,25 @@ namespace MEMS.Client.Main
 
         private void MainForm_Load(object sender, EventArgs e)
         {
+            
             selectPageCategory.Visible = false;
+            this.Visible = false;
+            using (var logfrm = new LogonForm())
+            {
+                if (logfrm.ShowDialog() == DialogResult.OK)
+                {
+                    this.StartPosition = FormStartPosition.CenterScreen;
+                    this.Visible = true;
+                    this.Location = new Point(Screen.PrimaryScreen.WorkingArea.Size.Width / 2 - this.Size.Width / 2, Screen.PrimaryScreen.WorkingArea.Size.Height / 2 - this.Size.Height / 2);
+
+                }
+                else
+                {
+                    islogcancel = true;
+                }
+            }
+            if (islogcancel)
+                this.Close();
         }
 
         private void MainForm_MdiChildActivate(object sender, EventArgs e)
