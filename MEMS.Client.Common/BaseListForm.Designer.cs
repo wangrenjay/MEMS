@@ -36,6 +36,7 @@
             this.barDelete = new DevExpress.XtraBars.BarButtonItem();
             this.barClose = new DevExpress.XtraBars.BarButtonItem();
             this.barsearchCheck = new DevExpress.XtraBars.BarCheckItem();
+            this.barSearch = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonImageCollectionLarge = new DevExpress.Utils.ImageCollection(this.components);
             this.ribbonMenu = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -43,7 +44,6 @@
             this.searchgroup = new DevExpress.XtraEditors.GroupControl();
             this.searchButton = new DevExpress.XtraEditors.SimpleButton();
             this.imageCollection1 = new DevExpress.Utils.ImageCollection(this.components);
-            this.barSearch = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribboncontrol)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonImageCollectionLarge)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.searchgroup)).BeginInit();
@@ -110,11 +110,20 @@
             // 
             // barsearchCheck
             // 
-            this.barsearchCheck.Caption = "检索";
+            this.barsearchCheck.Caption = "查询";
             this.barsearchCheck.Id = 6;
             this.barsearchCheck.LargeImageIndex = 3;
             this.barsearchCheck.Name = "barsearchCheck";
             this.barsearchCheck.CheckedChanged += new DevExpress.XtraBars.ItemClickEventHandler(this.barsearchCheck_CheckedChanged);
+            // 
+            // barSearch
+            // 
+            this.barSearch.Caption = "查询";
+            this.barSearch.Id = 7;
+            this.barSearch.LargeImageIndex = 3;
+            this.barSearch.Name = "barSearch";
+            this.barSearch.Visibility = DevExpress.XtraBars.BarItemVisibility.Never;
+            this.barSearch.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barSearch_ItemClick);
             // 
             // ribbonImageCollectionLarge
             // 
@@ -207,14 +216,6 @@
             this.imageCollection1.Images.SetKeyName(14, "Action_New_32x32.png");
             this.imageCollection1.Images.SetKeyName(15, "Action_LinkUnlink_Link_32x32.png");
             this.imageCollection1.Images.SetKeyName(16, "Action_LinkUnlink_Unlink_32x32.png");
-            // 
-            // barSearch
-            // 
-            this.barSearch.Caption = "查询";
-            this.barSearch.Id = 7;
-            this.barSearch.LargeImageIndex = 3;
-            this.barSearch.Name = "barSearch";
-            this.barSearch.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barSearch_ItemClick);
             // 
             // BaseListForm
             // 
