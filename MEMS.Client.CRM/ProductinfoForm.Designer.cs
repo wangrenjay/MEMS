@@ -240,7 +240,7 @@
             // 
             // gridColumn10
             // 
-            this.gridColumn10.Caption = "gridColumn10";
+            this.gridColumn10.Caption = "图纸名称";
             this.gridColumn10.Name = "gridColumn10";
             this.gridColumn10.Visible = true;
             this.gridColumn10.VisibleIndex = 0;
@@ -280,6 +280,7 @@
             this.btnfileupload.Size = new System.Drawing.Size(75, 23);
             this.btnfileupload.TabIndex = 0;
             this.btnfileupload.Text = "添加文件";
+            this.btnfileupload.Click += new System.EventHandler(this.btnfileupload_Click);
             // 
             // groupControl3
             // 
