@@ -226,7 +226,13 @@ namespace MEMS.Client.CRM
 
         private void btn_create_Click(object sender, EventArgs e)
         {
+            try
+            {
+            }
+            catch (Exception ex)
+            {
 
+            }
         }
 
     }
