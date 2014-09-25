@@ -97,7 +97,7 @@
             this.layoutControlItem15 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem16 = new DevExpress.XtraLayout.LayoutControlItem();
             this.panelControl3 = new DevExpress.XtraEditors.PanelControl();
-            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
+            this.btn_create = new DevExpress.XtraEditors.SimpleButton();
             this.comboBoxEdit1 = new DevExpress.XtraEditors.ComboBoxEdit();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.drawingdiag = new System.Windows.Forms.OpenFileDialog();
@@ -826,7 +826,7 @@
             // panelControl3
             // 
             this.panelControl3.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.panelControl3.Controls.Add(this.simpleButton1);
+            this.panelControl3.Controls.Add(this.btn_create);
             this.panelControl3.Controls.Add(this.comboBoxEdit1);
             this.panelControl3.Controls.Add(this.labelControl1);
             this.panelControl3.Dock = System.Windows.Forms.DockStyle.Top;
@@ -835,13 +835,14 @@
             this.panelControl3.Size = new System.Drawing.Size(856, 29);
             this.panelControl3.TabIndex = 1;
             // 
-            // simpleButton1
+            // btn_create
             // 
-            this.simpleButton1.Location = new System.Drawing.Point(234, 3);
-            this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(75, 23);
-            this.simpleButton1.TabIndex = 2;
-            this.simpleButton1.Text = "创建版本";
+            this.btn_create.Location = new System.Drawing.Point(234, 3);
+            this.btn_create.Name = "btn_create";
+            this.btn_create.Size = new System.Drawing.Size(75, 23);
+            this.btn_create.TabIndex = 2;
+            this.btn_create.Text = "创建版本";
+            this.btn_create.Click += new System.EventHandler(this.btn_create_Click);
             // 
             // comboBoxEdit1
             // 
@@ -1004,7 +1005,7 @@
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem15;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem16;
         private DevExpress.XtraEditors.PanelControl panelControl3;
-        private DevExpress.XtraEditors.SimpleButton simpleButton1;
+        private DevExpress.XtraEditors.SimpleButton btn_create;
         private DevExpress.XtraEditors.ComboBoxEdit comboBoxEdit1;
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private DevExpress.XtraEditors.GroupControl groupControl3;
